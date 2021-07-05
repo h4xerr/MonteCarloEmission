@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-}
+
 function App() {
   return (
     <div className="App">
@@ -21,4 +21,5 @@ export default class App extends Component {
       <div> I am the App component </div>
     )
   }
+}
 export default App;
