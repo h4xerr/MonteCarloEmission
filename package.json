@@ -2,7 +2,7 @@
   "name": "app123",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://h4xerr.github.io/app123",
+  "homepage": "https://h4xerr.github.io/MonteCarloEmission",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
