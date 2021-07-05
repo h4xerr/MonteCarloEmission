@@ -1,5 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+
+}
+function App() {
+  return (
+    <div className="App">
+    <h1>MOMO E GLUP</h1>
+    </div>
+  );
+}
+
 export default class App extends Component {
   componentDidMount() {
     console.log('I was triggered during componentDidMount')
@@ -11,13 +21,4 @@ export default class App extends Component {
       <div> I am the App component </div>
     )
   }
-}
-function App() {
-  return (
-    <div className="App">
-    <h1>MOMO E GLUP</h1>
-    </div>
-  );
-}
-
 export default App;
