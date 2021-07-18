@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/MonteCarloEmission/static/css/main.a1cc73df.chunk.css",
-    "main.js": "/MonteCarloEmission/static/js/main.3240aed1.chunk.js",
-    "main.js.map": "/MonteCarloEmission/static/js/main.3240aed1.chunk.js.map",
+    "main.css": "/MonteCarloEmission/static/css/main.76324108.chunk.css",
+    "main.js": "/MonteCarloEmission/static/js/main.93fa686e.chunk.js",
+    "main.js.map": "/MonteCarloEmission/static/js/main.93fa686e.chunk.js.map",
     "runtime-main.js": "/MonteCarloEmission/static/js/runtime-main.94e19b00.js",
     "runtime-main.js.map": "/MonteCarloEmission/static/js/runtime-main.94e19b00.js.map",
-    "static/js/2.38522154.chunk.js": "/MonteCarloEmission/static/js/2.38522154.chunk.js",
-    "static/js/2.38522154.chunk.js.map": "/MonteCarloEmission/static/js/2.38522154.chunk.js.map",
+    "static/js/2.2763218f.chunk.js": "/MonteCarloEmission/static/js/2.2763218f.chunk.js",
+    "static/js/2.2763218f.chunk.js.map": "/MonteCarloEmission/static/js/2.2763218f.chunk.js.map",
     "index.html": "/MonteCarloEmission/index.html",
-    "static/css/main.a1cc73df.chunk.css.map": "/MonteCarloEmission/static/css/main.a1cc73df.chunk.css.map",
-    "static/js/2.38522154.chunk.js.LICENSE.txt": "/MonteCarloEmission/static/js/2.38522154.chunk.js.LICENSE.txt",
+    "static/css/main.76324108.chunk.css.map": "/MonteCarloEmission/static/css/main.76324108.chunk.css.map",
+    "static/js/2.2763218f.chunk.js.LICENSE.txt": "/MonteCarloEmission/static/js/2.2763218f.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/MonteCarloEmission/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.94e19b00.js",
-    "static/js/2.38522154.chunk.js",
-    "static/css/main.a1cc73df.chunk.css",
-    "static/js/main.3240aed1.chunk.js"
+    "static/js/2.2763218f.chunk.js",
+    "static/css/main.76324108.chunk.css",
+    "static/js/main.93fa686e.chunk.js"
   ]
 }
