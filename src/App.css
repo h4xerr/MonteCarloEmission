@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
 body{
-  background-color: green;
+  background: rgb(107,212,102);
+  background: radial-gradient(circle, rgba(107,212,102,1) 65%, rgba(255,255,255,0.4990371148459384) 100%);
 }

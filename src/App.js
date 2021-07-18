@@ -35,7 +35,8 @@ class Greeting extends React.Component {
      }
    }
  };
- function MonteCarlo(){
+ function MonteCarlo(v1,v2,v3,v4){
+   delta=v1;w=v2;gg=v3
    saturation=((w**2)/4)/(delta**2+(gg**2/4)+(w**2/2))
    line= [saturation]*100
    for (let i=0;i<100;i++){
@@ -67,11 +68,11 @@ class Greeting extends React.Component {
              }
          }
          for (let i = 0; i < res.length; i++) {
-           //console.log(res[i])
+           res[i]=res[i]/100
          }
 const element = (
    <div>
-   <Plot
+   <Plot align="center"
   data={[
     {
       y: res,
@@ -79,7 +80,7 @@ const element = (
       mode: 'lines+markers',
       marker: {color: 'red'},
     }]}
-   layout={ {width: 500, height: 500, title: 'A Fancy Plot'} }
+   layout={ {width: 1000, height:0, title: 'Population of the excited state as a function of time'} }
      />
    </div>
  );
@@ -88,48 +89,92 @@ const element = (
 
 
 
+ const divStyle = {
+   color: 'black',
+ };
+
+
+
 
 
 
 export default function ContinuousSlider() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(50);
+  const [value1, setValue1] = React.useState(0);
+  const [value2, setValue2] = React.useState(3);
+  const [value3, setValue3] = React.useState(0);
+  const [value4, setValue4] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
+  const handledelta = (event, newdelta) => {
+    setValue1(newdelta);
   };
+  const handleomega = (event, newomega) => {
+    setValue2(newomega);
+  };
+  const handlegama = (event, newgama) => {
+    setValue3(newgama);
+  };
+  const handledt = (event, newdt) => {
+    setValue4(newdt);
+  };
+  console.log(value1,value2,value3,value4)
+
+
     return (
-      <React.Fragment>
+      <div style={divStyle}>
       <Typography id="continuous-slider"
       component="div"
-      variant="body1"
+      align="center"
+      variant="h4"
       style={{ height: 100, width: '100%', position: 'relative' }}>
         Monte Carlo Simulation of spontaneous emission of an atom
       </Typography>
-      <Grid container spacing={3}
-      style={{ height: 100, width: '30%', position: 'relative' }}>
+      <Grid container spacing={5}
+      style={{ height: 100, width: '100%', position: 'relative' }}>
         <Grid item>
-          hello
+          Delta
         </Grid>
         <Grid item xs>
-          <Slider value={value} onChange={handleChange} aria-labelledby="continuous-slider" />
+          <Slider value={value1}
+            min={0}
+            step={0.2}
+            max={2}
+            onChange={handledelta} aria-labelledby="continuous-slider" />
         </Grid>
         <Grid item>
-        <Button variant="contained" color="primary" onClick={() => {MonteCarlo()}}>
-          Primary
+          Omega
+        </Grid>
+        <Grid item xs>
+          <Slider value={value2}
+             min={0}
+             step={0.5}
+             max={5}
+             onChange={handleomega} aria-labelledby="continuous-slider" />
+        </Grid>
+        <Grid item>
+          Gama
+        </Grid>
+        <Grid item xs>
+          <Slider value={value3}
+           min={0}
+           step={0.1}
+           max={1}
+           onChange={handlegama} aria-labelledby="continuous-slider" />
+        </Grid>
+        <Grid item>
+          dt
+        </Grid>
+        <Grid item xs>
+          <Slider value={value4} onChange={handledt} aria-labelledby="continuous-slider" />
+        </Grid>
+        <Grid item>
+        <Button variant="contained" color="primary" onClick={() => {MonteCarlo(value1,value2,value3,value4)}}>
+          GENERATE
         </Button>
         </Grid>
-        <Grid item>
-          hello
-        </Grid>
       </Grid>
-      </React.Fragment>
+      </div>
     );
-
-
-
-
-
 
   //Monte Carlo Simulation
 
